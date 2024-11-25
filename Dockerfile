@@ -19,9 +19,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Copy required files
-COPY Analyze.py ./
-COPY main.py ./
+COPY main.py .
+COPY ./src ./src
 
 EXPOSE 8080
 
