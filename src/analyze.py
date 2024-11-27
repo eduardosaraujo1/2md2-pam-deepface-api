@@ -8,7 +8,7 @@ def analyze_deepface(img):
             return analysis
         return None
     except Exception as e:
-        log_analysis_error(e.message)
+        log_analysis_error(e)
         return None
 
 def validate_analysis(analysis):
